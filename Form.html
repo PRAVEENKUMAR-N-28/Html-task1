@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <h1>01.Application Form</h1>
+    <form action="">
+        <!--Name-->
+        <div>
+            <Label for="name">Name :</Label>
+            <input type="text " id="name" name="name" maxlength="20" minlength="3" placeholder="Enter your name" required>
+            <br>
+            <br>
+        </div>
+        <!--Email-->
+        <div>
+            <label for="mail">Email :</label>
+            <input type="email" id="mail" name="mail" required placeholder="Enter your email">
+            <br>
+            <br>
+        </div>
+        <!--Using radio button to select gender-->
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" id="gender" name="gender" value="Male">Male
+            <input type="radio" id="gender" name="gender" value="Female" >Female
+            <br>
+        </div>
+        <!--Check box to mark the knowing skills-->
+        <div>
+            <p>CHOOSE SKILLS</p>
+            <Label for="html">HTML</Label>
+            <input type="checkbox" name="html" id="html" value="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="css" id="css" value="css">
+            <label for="js">JS</label>
+            <input type="checkbox" id="js" name="js" value="js">
+            <label for="bootstrap">Bootstrap</label>
+            <input type="checkbox" name="bootsrap" id="bootstrap" value="bootstrap">
+            <label for="react">React</label>
+            <input type="checkbox" name="react" id="react" value="react">
+            <br>
+            <br>
+        </div>
+        <!--Drop down box to select job type-->
+        <div>
+            <label for="jobtype">JOB TYPE: </label>
+            <select>
+                <option value="front end developer">FRONT END DEVELOPER</option>
+                <option value="Rect">REACT DEVELOPER</option>
+            </select><br><br>
+        </div>
+        <!--Drop down box to choose browser-->
+        <div>
+            <label for="browser">Choose your browser from this list:</label>
+            <select name="browser" id="browser">
+                <option value="">Choose One</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Edge">Edge</option>
+                <option value="Fire fox">Fire Fox</option>
+            </select>
+            <br>
+        </div>
+        <!--Text Area -->
+        <div>
+            <textarea name="" id="" cols="20" rows="0" placeholder="give a brief summary about you"></textarea>
+            <br>
+            <br>
+        </div>
+        <!--Submit Button-->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
